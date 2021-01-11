@@ -14,9 +14,14 @@ navigation = {
       menu.classList.toggle("showMenu");
     });
   },
-  offMenu: function () {
+  checkMenu: function () {
     let menu = document.querySelector(".navbar__menu");
-    menu.classList.remove("showMenu");
+    if (menu.classList.contains("showMenu")) {
+      menu.classList.remove("showMenu");
+      return true;
+    } else {
+      return false;
+    }
   },
 
   sectionsList: function () {
@@ -46,13 +51,19 @@ navigation = {
         let sections = this.sectionsList();
 
         // console.log(sections[index]);
-        this.offMenu();
-        setTimeout(function () {
+        if (this.checkMenu() == false) {
           window.scrollTo({
             top: sections[index] - 78,
             behavior: "smooth",
           });
-        }, 300);
+        } else {
+          setTimeout(function () {
+            window.scrollTo({
+              top: sections[index] - 78,
+              behavior: "smooth",
+            });
+          }, 300);
+        }
       });
     });
     // const header = document
