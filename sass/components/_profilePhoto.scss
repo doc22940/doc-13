@@ -1,0 +1,14 @@
+.profile-photo__container {
+  width: 22.4rem;
+  margin: 0 auto;
+
+  border-radius: 50%;
+  background-color: lighten($color-grey, 45%);
+  .profile-photo {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 0.8rem;
+  }
+}

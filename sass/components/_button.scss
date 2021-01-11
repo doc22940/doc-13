@@ -1,0 +1,74 @@
+.btn {
+  display: inline-block;
+  padding: 2.4rem 4.2rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border-radius: 0.4rem;
+  text-align: center;
+  &--yellow {
+    color: #fff;
+    background-color: $color-primary;
+    transition: all 0.2s;
+    &:hover {
+      background-color: darken($color-primary, 10%);
+    }
+  }
+  &--portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: rgba($color-primary, 0.9);
+  }
+  &--menu {
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 9rem;
+    // height: 4.5rem;
+    padding: 1.2rem 1.2rem;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    display: none;
+    span {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.28rem;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 400;
+      margin-right: 8px;
+    }
+    i {
+      font-size: 1.25rem;
+      padding: 0;
+      margin: 0;
+      color: #fff;
+    }
+  }
+}
+
+.btn--close {
+  display: inline-block;
+  text-align: center;
+  text-justify: center;
+  text-transform: capitalize;
+  padding: 0.8rem 1rem;
+  background-color: $color-primary;
+  color: $color-white;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  span {
+    margin-left: 2px;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  &:hover {
+    background-color: darken($color-primary, 10%);
+  }
+}

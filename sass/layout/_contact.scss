@@ -1,0 +1,92 @@
+.section-contact {
+  padding: 9.6rem 0;
+  text-align: center;
+  background-color: #212529;
+  background-image: url("../img/map-image.png");
+  background-size: 100% auto;
+
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+
+  &__title {
+    .heading-secondary {
+      color: $color-white;
+    }
+  }
+
+  &__form {
+    margin: 5.4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+
+    ::placeholder {
+      font-weight: 700;
+      font-family: "Montserrat";
+      color: rgba(#757575, 0.4);
+    }
+
+    &--left {
+      padding-right: 1rem;
+
+      display: flex;
+      flex-direction: column;
+
+      input {
+        height: 6.4rem;
+        // width: 54rem;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        color: #495057;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.5;
+        font-family: "Roboto Slab";
+        &:not(:last-child) {
+          margin-bottom: 2.4rem;
+        }
+        padding: 2rem;
+      }
+    }
+    &--right {
+      padding-left: 1rem;
+      width: 100%;
+
+      height: auto;
+
+      textarea {
+        font-family: "Roboto Slab";
+        min-height: 15.4rem;
+        display: block;
+        // height: 100%;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        padding: 2rem;
+        color: #495057;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.5;
+        resize: vertical;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-contact__form {
+    &--left {
+      padding: 0 1rem;
+
+      margin-bottom: 2.4rem;
+    }
+    &--right {
+      padding: 0 1rem;
+      margin-bottom: 2.4rem;
+    }
+  }
+}

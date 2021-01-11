@@ -1,0 +1,29 @@
+html {
+  font-size: 62.5%;
+
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row {
+  width: 100%;
+}
+
+.row__flex {
+  display: flex;
+
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}

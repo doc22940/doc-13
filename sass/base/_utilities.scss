@@ -1,0 +1,17 @@
+.pd-lr-small {
+  padding: 0 1.2rem;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10%);
+}
+
+.overflow-off {
+  overflow-y: hidden;
+}
+
+.overflow-on {
+  overflow-y: overlay;
+}
